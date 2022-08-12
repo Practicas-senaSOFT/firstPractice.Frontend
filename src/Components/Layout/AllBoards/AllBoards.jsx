@@ -2,6 +2,7 @@ import React from "react";
 import "./AllBoards.scss";
 import { AiOutlineUser } from "react-icons/ai";
 import { RiLoader5Line } from "react-icons/ri";
+import { CreateBoard } from "../../Modals/CreateBoard/CreateBoard";
 
 export const AllBoards = ({ BoardsData, dataState }) => {
   return (
@@ -13,20 +14,13 @@ export const AllBoards = ({ BoardsData, dataState }) => {
       <div className="Boards-resourses">
         {dataState ? (
           <div>
-            {BoardsData.map((board) => (
-              <div className="Boards-resourses-item" key={board.id}>
-                <div className="Boards-resourses-item-header">
-                  <h2>{board.title}</h2>
-                  <p>{board.description}</p>
-                </div>
-              </div>
-            ))}
+            
           </div>
         ) : (
           <div className="loader">
             <RiLoader5Line className="loader-icon" />
             <h2>No tienes tableros creados aun</h2>
-            <button>Nuevo tablero</button>
+            <CreateBoard />
           </div>
         )}
       </div>

@@ -6,7 +6,7 @@ import "./StartPage.scss";
 
 export const StartPage = () => {
   const [boardsData, setBoardsData] = React.useState([]);
-  const [dataState, setDataState] = React.useState(false);
+  const [dataState, setDataState] = React.useState(true);
 
   const getBoards = () => {
     axios

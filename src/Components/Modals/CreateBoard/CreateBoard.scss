@@ -1,0 +1,40 @@
+.createBoard-container {
+  outline: solid 1px red;
+  width: 350px;
+  background: #FFF;
+  
+  .createBoard-Header {
+    display: flex;
+    padding: 0.5em;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .createBoard-content {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
+    z-index: 2;
+
+    input {
+      padding: 0.75em 1em;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    button {
+      outline: solid 1px red;
+      width: 210px;
+      padding: 0.75em;
+      border-radius: 8px;
+      font-weight: bolder;
+      border: none;
+      margin-top: 1.5em;
+      cursor: pointer;
+    }
+  }
+}
